@@ -94,13 +94,6 @@ Bayesian optimisation对之前超参数空间中的评估点使用高斯过程�
 
 <<<<<<< HEAD
 ![png](output_10_1.png)
-=======
-
-
-
-![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_10_1.png)
->>>>>>> origin/master
-
 
 其中绿色虚线代表得分函数（以超参数X为函数）的真实值。图中黑的的点（以及他们的误差线）是我们用于评估分类器的点同时我们也计算出其得分。在蓝色线是我们利用回归模型所试图预测的得分函数，并用深蓝色阴影区域代表得分函数值的不确定性。
 
@@ -167,7 +160,7 @@ Bayesian optimisation对之前超参数空间中的评估点使用高斯过程�
 	<matplotlib.legend.Legend at 0x109de4490>
 
 
-![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_13_1.png)
+![png](output_13_1.png)
 
 
 
@@ -234,7 +227,7 @@ The algorithm suggests sampling at X=1.5833
 
 
 
-![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_18_1.png)
+![png](output_18_1.png)
 
 
 
@@ -336,11 +329,11 @@ params, scores, yerr, clf = bayes_optimise(DecisionTreeRegressor(),
 ```
 
 
-![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_21_0.png)
+![png](output_21_0.png)
 
 
 
-![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_21_1.png)
+![png](output_21_1.png)
 
 
 
