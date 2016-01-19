@@ -108,7 +108,7 @@ basic_plot()
 
 
 
-![png](output_10_1.png)
+![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_10_1.png)
 
 
 其中绿色虚线代表得分函数（以超参数X为函数）的真实值。图中黑的的点（以及他们的误差线）是我们用于评估分类器的点同时我们也计算出其得分。在蓝色线是我们利用回归模型所试图预测的得分函数，并用深蓝色阴影区域代表得分函数值的不确定性。
@@ -185,7 +185,7 @@ ax.legend(loc='best')
 
 
 
-![png](output_13_1.png)
+![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_13_1.png)
 
 
 
@@ -264,7 +264,7 @@ ax.legend(loc='best')
 
 
 
-![png](output_18_1.png)
+![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_18_1.png)
 
 
 
@@ -367,11 +367,11 @@ params, scores, yerr, clf = bayes_optimise(DecisionTreeRegressor(),
 ```
 
 
-![png](output_21_0.png)
+![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_21_0.png)
 
 
 
-![png](output_21_1.png)
+![png](https://github.com/ulinka/ulinka.github.io/blob/master/_posts/book/output_21_1.png)
 
 
 
