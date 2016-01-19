@@ -6,17 +6,17 @@ kramdown:
   input: GFM
 
 # 作者信息
-author: 
-  name: ghgjg
-  email: gklhjk@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+author:
+  name: lan
+  email: lank@gmail.com
+  link: http://ulinka.github.io/
+  weibo: http://ulinka.github.io/
+  github: http://ulinka.github.io/
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: lan的博客
+description: lan的博客
+url: http://http://ulinka.github.io/
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
@@ -30,4 +30,4 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: lan
