@@ -3,6 +3,8 @@ layout: post
 title: 较小超参数的Bayesian optimisation
 category: 翻译
 tags: [python  ,bayesian]
+
+
 ># 较小超参数的Bayesian optimisation
 
    在拟合一个单分类器时不需要花费太多时间，但是在拟合上百个分类器时却需要大量时间。在寻找超参数时我们必须要拟合多个分类器，那我们应该怎么解决这种问题呢？
