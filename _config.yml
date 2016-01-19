@@ -20,8 +20,8 @@ url: http://http://ulinka.github.io/
 rss_url: /pages/rss.xml
 
 # avatar头像及Favicon
-avatar: /_posts/images/92.jpg
-favicon: /_posts/images/92.jpg
+avatar: https://github.com/ulinka/ulinka.github.io/blob/master/_posts/images/92.jpg?raw=true
+favicon: https://github.com/ulinka/ulinka.github.io/blob/master/_posts/images/92.jpg?raw=true
 # google analytics 设置
 ga:
   id: UA-54767140-1
