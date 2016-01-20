@@ -1,5 +1,7 @@
-
-时间的转化
+---
+layout: post时间的转化
+title:Solve the time problem in python
+---
 我们的代码往往需要进行简单的时间转化工作，比如将日转化成秒，将小时间转化成分钟等。
 在python中我们可以利用datetime模块来完成不同时间单位的转化。例如，需要表示一个时间间隔，可以像这样创建一个timedelta实例：
 
