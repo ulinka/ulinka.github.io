@@ -1,3 +1,11 @@
+---
+layout: post
+title: 较小超参数的Bayesian optimisation
+category: tool
+tags: Essay
+keywords: python,optimisation
+---
+
 
 ># 较小超参数的Bayesian optimisation
 
