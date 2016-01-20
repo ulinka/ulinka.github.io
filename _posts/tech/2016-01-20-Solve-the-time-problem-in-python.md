@@ -1,9 +1,14 @@
 ---
-layout: post时间的转化
+layout: post
 title:Solve the time problem in python
+category: tech
+tags:Essay
+keywords:python timezone
 ---
-我们的代码往往需要进行简单的时间转化工作，比如将日转化成秒，将小时间转化成分钟等。
-在python中我们可以利用datetime模块来完成不同时间单位的转化。例如，需要表示一个时间间隔，可以像这样创建一个timedelta实例：
+##时间的转化
+>我们的代码往往需要进行简单的时间转化工作，比如将日转化成秒，将小时间转化成分钟等。
+
+>在python中我们可以利用datetime模块来完成不同时间单位的转化。例如，需要表示一个时间间隔，可以像这样创建一个timedelta实例：
 
 
 ```python
@@ -45,7 +50,7 @@ c.total_seconds()
 
 
 
-如果需要表示特定的日期和时间，可以创建datetime实例并使用标准的数学运算来操纵它们。示例如下：
+###如果需要表示特定的日期和时间，可以创建datetime实例并使用标准的数学运算来操纵它们。示例如下：
 
 
 ```python
@@ -141,7 +146,7 @@ d=datetime(2013,2,28)
 
 
 
-help(timedelta)可以解决不了months的增加减少，因此需要引入dteutil.relativedelta()来解决，其中dateutil的一个显著特别就是处理有关月份的问题时候能补充一些datetime模块的缺失
+###help(timedelta)可以解决不了months的增加减少，因此需要引入dteutil.relativedelta()来解决，其中dateutil的一个显著特别就是处理有关月份的问题时候能补充一些datetime模块的缺失
 
 
 
@@ -236,7 +241,7 @@ type(y)
 
 
 
-同样也可以将datetime.datetime类型的转化为字符型
+###同样也可以将datetime.datetime类型的转化为字符型
 
 
 ```python
@@ -261,7 +266,8 @@ nice_b
 
 
 
-处理设计时区的日期问题设计下面几个问题
+###处理设计时区的日期问题设计下面几个问题
+
  1. 时区的设置
  2. 时区的转化
 
@@ -296,7 +302,7 @@ print bang_d
     2012-12-21 20:50:00+05:30
 
 
-将所有时间转化为UTC(世界统一时间)。
+##将所有时间转化为UTC(世界统一时间)。
 
 
 ```python

@@ -1,14 +1,14 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 pygments: true
-auto: true
+
 kramdown:
   input: GFM
 
 # 作者信息
 author:
   name: lan
-  email: lank@gmail.com
+  email: donganlan@gmail.com
   link: http://ulinka.github.io/
   weibo: http://ulinka.github.io/
   github: http://ulinka.github.io/
@@ -17,15 +17,12 @@ author:
 title: lan的博客
 description: lan的博客
 url: http://http://ulinka.github.io/
-rss_url: /pages/rss.xml
+rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
 avatar: https://github.com/ulinka/ulinka.github.io/blob/master/_posts/images/92.jpg?raw=true
 favicon: https://github.com/ulinka/ulinka.github.io/blob/master/_posts/images/92.jpg?raw=true
 # google analytics 设置
-ga:
-  id: UA-54767140-1
-  url: yansu.org
 
 # disqus 设置
 disqus:
