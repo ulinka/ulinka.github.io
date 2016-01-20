@@ -3,7 +3,7 @@ layout: post
 title: Using python access web data
 category: homework
 tags: Essay
-keywords: python,re,
+keywords: python,re
 ---
 
 
