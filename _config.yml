@@ -2,8 +2,10 @@ permalink: /:year/:month/:day/:title.html
 auto: true
 pygments: true
 markdown: redcarpet
-  redcarpet:
-    extensions:
+redcarpet:
+  png_dir:    images/latex
+  png_url:    /images/latex
+  extensions:
       - hard_wrap
       - no_intra_emphasis
       - autolink
