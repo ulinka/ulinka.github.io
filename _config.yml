@@ -1,5 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 pygments: true
+auto: true
 markdown: redcarpet
 redcarpet:
   extensions:
