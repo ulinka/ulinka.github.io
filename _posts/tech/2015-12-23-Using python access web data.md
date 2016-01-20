@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title:  Using python access web data
-category: tool,homework
+category: homework
 tags: Essay
 keywords: python,re
 ---
