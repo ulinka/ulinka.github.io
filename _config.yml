@@ -35,3 +35,6 @@ favicon: https://github.com/ulinka/ulinka.github.io/blob/master/_posts/images/92
 # disqus 设置
 disqus:
   shortname: lan
+  comments : true
+
+theme : minimal 
