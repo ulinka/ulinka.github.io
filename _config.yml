@@ -28,8 +28,8 @@ url: http://http://ulinka.github.io/
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: /assets/img/92.jpg
-favicon: /assets/img/92.jpg
+avatar: ./assets/img/92.jpg
+favicon: ./assets/img/92.jpg
 # google analytics 设置
 
 # disqus 设置
