@@ -6,7 +6,7 @@ tags: Essay
 keywords: python,scikit-learn
 ---
 
-### 用scikit-learn 来演绎随机森林方法
+>### 用scikit-learn 来演绎随机森林方法
 
 作者：Ando Saabas
 
@@ -18,7 +18,7 @@ keywords: python,scikit-learn
 
 废话少说, 代码托管在github,你可以通过  `pip install treeinterpreter`   来获取。
 
-### 使用treeinterpreter来分解随机森林
+>### 使用treeinterpreter来分解随机森林
 
  首先我们将使用一个简单的数据集，来训练随机森林模型。在对测试集的进行预测的同时我们将对预测值进行分解。
 
@@ -136,7 +136,7 @@ print bias + np.sum(contributions, axis=1)
     [ 30.27  22.03]
 
 
-### 对更多的数据集进行对比
+>### 对更多的数据集进行对比
 
 当对比两个数据集时，这个方法将会很有用。例如
 
@@ -207,7 +207,7 @@ for c, feature in sorted(zip(totalc1 - totalc2,
     DIS -0.18
 
 
-### 分类树 和 森林
+>### 分类树 和 森林
 
 完全相同的方法可以用于分类树，其中可以得到各个特征对于估计类别的贡献大小。
 我们可以用iris数据集做一个例子。
@@ -270,7 +270,7 @@ for c, feature in zip(contributions[0],
 
 我们可以看到，对预测值是第二类影响力最大的是花瓣的长度和宽度,它们对更新之前的结果有最大影响。
 
-### 总结
+>### 总结
 
 对随机森林预测值的说明其实是很简单的,与线性模型难度相同。通过使用treeinterpreter (pip install treeinterpreter)，简单的几行代码就可以解决问题。
 

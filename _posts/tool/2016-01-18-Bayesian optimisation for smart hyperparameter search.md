@@ -7,8 +7,9 @@ keywords: python,optimisation
 ---
 
 
-># 较小超参数的Bayesian optimisation
 
+># 较小超参数的Bayesian optimisation
+---
    在拟合一个单分类器时不需要花费太多时间，但是在拟合上百个分类器时却需要大量时间。在寻找超参数时我们必须要拟合多个分类器，那我们应该怎么解决这种问题呢？
 
 本文研究了Bayesian optimisation的算法的内部工作，你可以通过使用它来减少设定的超参数集的数量并获得最优的超参数集。如果你正在寻找一个已经实现的算法工具，[Yelp](http://www.yelp.com/la-crescenta-montrose-ca-us)提供了 [MOE](https://github.com/Yelp/MOE), [metric optimisation](https://github.com/Yelp/MOE) 
@@ -76,7 +77,7 @@ yp = score_func(xp) + yerr * np.random.randn(len(xp))
 
 
 ```python
-# Set up a Gaussian process
+># Set up a Gaussian process
 kernel = ExpSquaredKernel(1)
 gp = george.GP(kernel)
 
@@ -173,7 +174,7 @@ def next_sample(gp, samples, bounds=(0,10), bigger_better=False):
 
 
 fig, ax = basic_plot()
-# expected improvement would need its own y axis, so just multiply by ten
+># expected improvement would need its own y axis, so just multiply by ten
 ax.plot(x, 10*np.abs(expected_improvement(x, gp, yp)),
         label='expected improvement')
 ax.legend(loc='best')
@@ -220,7 +221,7 @@ from sklearn.tree import DecisionTreeRegressor
 from operator import itemgetter
 
 
-# Load the data
+>### Load the data
 X, y = make_friedman1(n_samples=5000)
 
 
@@ -289,7 +290,7 @@ top_parameters(random_grid)
 
  最大的得分参数大概在8附近。现在让我们来试试bayesian方法。
 
-># Bayesian optimisation
+# Bayesian optimisation
 
    你已经准备好你的先验函数了么？让我开始用bayesian的方法来试一下！那么问题就是我们是否可以找到和 min_smples_split至少一样的值或者更好的一个或者减少计算步骤。
 
