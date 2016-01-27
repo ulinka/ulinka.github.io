@@ -68,7 +68,7 @@ cur.close()
 
 
 ---
-###week four
+##week four
 
 ---
 
@@ -82,7 +82,7 @@ import sqlite3
 conn = sqlite3.connect('/Users/dal/Documents/rosterdb.sqlite')
 cur = conn.cursor()
 
-# Do some setup
+## Do some setup
 cur.executescript('''
 DROP TABLE IF EXISTS User;
 DROP TABLE IF EXISTS Member;
