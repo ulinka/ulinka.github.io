@@ -46,7 +46,7 @@ sns.set_style('whitegrid')
 sns.set_context("talk")
 ```
 
-> ## By George!
+## By George!
 
     Bayesian optimisation对之前超参数空间中的评估点使用高斯过程来拟合回归模型。同时这个模型将提供超参数空间中下一个用于评估模型的点（可能是最优的）。
     
@@ -77,7 +77,7 @@ yp = score_func(xp) + yerr * np.random.randn(len(xp))
 
 
 ```python
->## Set up a Gaussian process
+## Set up a Gaussian process
 kernel = ExpSquaredKernel(1)
 gp = george.GP(kernel)
 
@@ -174,7 +174,7 @@ def next_sample(gp, samples, bounds=(0,10), bigger_better=False):
 
 
 fig, ax = basic_plot()
->## expected improvement would need its own y axis, so just multiply by ten
+## expected improvement would need its own y axis, so just multiply by ten
 ax.plot(x, 10*np.abs(expected_improvement(x, gp, yp)),
         label='expected improvement')
 ax.legend(loc='best')
@@ -203,7 +203,7 @@ print "The algorithm suggests sampling at X=%.4f"%(next_sample(gp, yp))
 
 现在让我们看看一些实际的案例。
 
->## 以随机格点搜索的效果作为基准
+## 以随机格点搜索的效果作为基准
 
 
 为了让这个简单的示例更有趣，我们使用一个来自(Friedman1)的回归问题以及一个决策树回归模型（它在这个数据集下面拟合大量分类器相当的快）。你可以在实际问题中用它来代替两者。
@@ -220,8 +220,7 @@ from sklearn.tree import DecisionTreeRegressor
 
 from operator import itemgetter
 
-
->### Load the data
+### Load the data
 X, y = make_friedman1(n_samples=5000)
 
 
