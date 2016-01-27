@@ -46,7 +46,7 @@ sns.set_style('whitegrid')
 sns.set_context("talk")
 ```
 
-> # By George!
+> ## By George!
 
     Bayesian optimisation对之前超参数空间中的评估点使用高斯过程来拟合回归模型。同时这个模型将提供超参数空间中下一个用于评估模型的点（可能是最优的）。
     
@@ -77,7 +77,7 @@ yp = score_func(xp) + yerr * np.random.randn(len(xp))
 
 
 ```python
-># Set up a Gaussian process
+>## Set up a Gaussian process
 kernel = ExpSquaredKernel(1)
 gp = george.GP(kernel)
 
@@ -174,7 +174,7 @@ def next_sample(gp, samples, bounds=(0,10), bigger_better=False):
 
 
 fig, ax = basic_plot()
-># expected improvement would need its own y axis, so just multiply by ten
+>## expected improvement would need its own y axis, so just multiply by ten
 ax.plot(x, 10*np.abs(expected_improvement(x, gp, yp)),
         label='expected improvement')
 ax.legend(loc='best')
@@ -203,7 +203,7 @@ print "The algorithm suggests sampling at X=%.4f"%(next_sample(gp, yp))
 
 现在让我们看看一些实际的案例。
 
-># 以随机格点搜索的效果作为基准
+>## 以随机格点搜索的效果作为基准
 
 
 为了让这个简单的示例更有趣，我们使用一个来自(Friedman1)的回归问题以及一个决策树回归模型（它在这个数据集下面拟合大量分类器相当的快）。你可以在实际问题中用它来代替两者。
@@ -230,7 +230,7 @@ clf = DecisionTreeRegressor()
 param_dist = {"min_samples_split": sp_randint(1, 101),
              }
 
-# run randomized search
+## run randomized search
 n_iterations = 8
 
 random_grid = RandomizedSearchCV(clf,
@@ -290,7 +290,7 @@ top_parameters(random_grid)
 
  最大的得分参数大概在8附近。现在让我们来试试bayesian方法。
 
-# Bayesian optimisation
+## Bayesian optimisation
 
    你已经准备好你的先验函数了么？让我开始用bayesian的方法来试一下！那么问题就是我们是否可以找到和 min_smples_split至少一样的值或者更好的一个或者减少计算步骤。
 
@@ -389,13 +389,13 @@ print params[np.argmax(scores)], 'scores', scores[np.argmax(scores)]
 
 你可以看到通过抽样所得的点都非常接近最大值。当随机格点搜索法抽样到的点远离最高点的区域时（40或者以上），baiyesian optimization方法所抽得的点集中于最大值附近（大约20左右）。这样快速有效的找到最大值。有时候我们甚至可以提前停止计算后续的五个点，因为他们都十分接近彼此。
 
-># 利器--MOE
+>## 利器--MOE
 
      
    虽然它很容易为你自己建立一个小的bayesian optimisation过程,我依然建议你看看[MOE](https://github.com/Yelp/MOE)。它是一个用于做全局，黑箱优化的一个非常优秀的产品，由Yelp的专业学者们开发，因此比我们自己做的方案更加强大。
      
      
 
-> # 结论
+> ## 结论
    
    bayesian optimisation并不可怕，通过两个例子，我们可以相信通过使用像这样的聪明方法可以获得比格点搜索法更快的解决问题（即使在高维的情况下），但实际上并没有任何魔法发生。
