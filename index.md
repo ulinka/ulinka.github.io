@@ -14,3 +14,7 @@ title: Welcome
 ##还不错的链接
  * [小信的bolg](http://playbear.github.io/)
  * [静觅](http://cuiqingcai.com/)
+ * [Scipy Lecture Notes](http://www.scipy-lectures.org/index.html)
+ *  [District Data Labs](https://districtdatalabs.silvrback.com/)
+ * [Hacker News](https://news.ycombinator.com/)
+ * [LeftNotEasy bolg](http://www.cnblogs.com/LeftNotEasy/)
