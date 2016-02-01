@@ -2,18 +2,19 @@
 layout: post
 title: Logistic Regression Class 一些注释
 category: life
-tags: Essay
-keywords: Logistic Regression Class,python
----
-
-
-今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
+tags: Essay
+keywords: Logistic Regression Class,python
+---
+
+
+今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
+
 
 $$
 J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k}  1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}\right]
@@ -71,12 +72,6 @@ theta=theta.reshape(self.classNum,self.N); 来变成矩阵
 有时候又要从矩阵变成一个list时候：可以
 self.theta = np.zeros((self.classNum,self.N)).reshape(self.classNum*self.N)  
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-</script>
 
 $- \dfrac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{k}  1 \left\{ {y^{(i)} = j} \right\} $有非常有意思的表达方式，请看
 
