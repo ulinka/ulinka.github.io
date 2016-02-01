@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logistic Regression Class 一些注释
+title: Logistic Regression Class 一些注释1
 category: life
 tags: Essay
 keywords:Logistic Regression Class ,python
