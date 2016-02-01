@@ -20,9 +20,9 @@ keywords:Logistic Regression Class ,python
 </script>
 
 
-\begin{align}
+$$
 J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k}  1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}\right]
-\end{align}
+$$
 
 
 对于其中的$ \log \dfrac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }} $ 我们可以用python中的一些不错的函数来表示如下：
@@ -77,7 +77,7 @@ theta=theta.reshape(self.classNum,self.N); 来变成矩阵
 self.theta = np.zeros((self.classNum,self.N)).reshape(self.classNum*self.N)  
 
 
-$- \dfrac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{k}  1 \left\{ {y^{(i)} = j} \right\} $有非常有意思的表达方式，请看
+$$- \dfrac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{k}  1 \left\{ {y^{(i)} = j} \right\} $$有非常有意思的表达方式，请看
 
 
 ```python
