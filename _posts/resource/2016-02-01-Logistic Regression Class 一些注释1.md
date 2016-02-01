@@ -3,18 +3,11 @@ layout: post
 title: Logistic Regression Class 一些注释1
 category: life
 tags: Essay
-keywords:Logistic Regression Class ,python
+keywords: Logistic Regression Class ,python
 ---
 
 
 今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-</script>
 
 
 $$
@@ -105,3 +98,9 @@ def train(self,maxiter=200,disp = False):
 
 这里是用optimize的BFGS来进行计算的。
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
