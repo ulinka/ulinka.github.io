@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: Logistic Regression Class 一些注释
@@ -7,10 +8,7 @@ keywords:Logistic Regression Class ,python
 ---
 
 
-
 今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
-
-参考文献 [wiki](http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression)
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -76,8 +74,14 @@ theta=theta.reshape(self.classNum,self.N); 来变成矩阵
 有时候又要从矩阵变成一个list时候：可以
 self.theta = np.zeros((self.classNum,self.N)).reshape(self.classNum*self.N)  
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
 
-$$- \dfrac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{k}  1 \left\{ {y^{(i)} = j} \right\} $$有非常有意思的表达方式，请看
+$- \dfrac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{k}  1 \left\{ {y^{(i)} = j} \right\} $有非常有意思的表达方式，请看
 
 
 ```python
