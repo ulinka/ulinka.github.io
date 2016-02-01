@@ -18,3 +18,5 @@ title: Welcome
  *  [District Data Labs](https://districtdatalabs.silvrback.com/)
  * [Hacker News](https://news.ycombinator.com/)
  * [LeftNotEasy bolg](http://www.cnblogs.com/LeftNotEasy/)
+ *  [UFLDL Tutorial](http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial)
+ *  [MachineLearning-Andrew Ng](http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=MachineLearning)
