@@ -2,19 +2,17 @@
 layout: post
 title: Logistic Regression Class 一些注释
 category: life
-
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js"></script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
 tags: Essay
 keywords: Logistic Regression Class,python
 ---
 
 
 今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js"></script>
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
 
 $$
 J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k}  1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}\right]
