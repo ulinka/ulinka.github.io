@@ -8,7 +8,7 @@ keywords: Logistic Regression Class,python
 
 
 今天看了一下Logistic Regression Class的一些代码，获得一些编程技巧
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
