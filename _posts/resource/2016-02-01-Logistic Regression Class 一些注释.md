@@ -16,6 +16,11 @@ keywords: Logistic Regression Class,python
 
 $$J(\theta) = - \frac{1}{m} \left[ \sum_{i=1}^{m} \sum_{j=1}^{k}  1\left\{y^{(i)} = j\right\} \log \frac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}\right]$$
 
+<img class="tex" alt="
+\begin{align}
+\nabla_{\theta_j} J(\theta) = - \frac{1}{m} \sum_{i=1}^{m}{ \left[ x^{(i)} \left( 1\{ y^{(i)} = j\}  - p(y^{(i)} = j | x^{(i)}; \theta) \right) \right]  }
+\end{align}
+" src="/wiki/images/math/5/9/e/59ef406cef112eb75e54808b560587c9.png">
 
 对于其中的$$ \log \dfrac{e^{\theta_j^T x^{(i)}}}{\sum_{l=1}^k e^{ \theta_l^T x^{(i)} }}$$ 我们可以用python中的一些不错的函数来表示如下：
 
