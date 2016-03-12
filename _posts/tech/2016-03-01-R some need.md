@@ -1,3 +1,13 @@
+---
+layout: post
+title: some about R
+category: homework
+tags: Essay
+keywords: r
+---
+
+
+
 ```r
 bootstrap.lm<-function(z,nsample){
     x<-z$x;y<-z$y
