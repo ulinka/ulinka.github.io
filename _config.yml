@@ -1,8 +1,8 @@
 permalink: /:year/:month/:day/:title.html
 pygments: true
 auto: true
-markdown: redcarpet
-redcarpet:
+markdown: kramdown
+kramdown:
   extensions:
       - hard_wrap
       - no_intra_emphasis
