@@ -1,5 +1,5 @@
 permalink: /:year/:month/:day/:title.html
-pygments: true
+highlighter: rouge
 auto: true
 markdown: kramdown
 kramdown:
