@@ -29,6 +29,8 @@ def is_operate(symbol):
 
 ```
 ## 美化 去掉多余的括号
+
+```
 def add_brackets(s):
     l1 = sum(list(map(lambda x: x =='(',s)))
     l2 = sum(list(map(lambda x: x ==')',s)))
