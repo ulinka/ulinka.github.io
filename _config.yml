@@ -2,7 +2,8 @@ permalink: /:year/:month/:day/:title.html
 highlighter: rouge
 auto: true
 markdown: kramdown
-remote_theme: benbalter/retlab
+
+remote_theme:   benbalter/retlab
 kramdown:
   extensions:
       - hard_wrap
@@ -38,7 +39,7 @@ disqus:
   shortname: lan
   comments : true
 
-# theme : minima
+# theme: minima
 
 sass:
   style: compressed
